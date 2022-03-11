@@ -13,7 +13,7 @@ var numberOfArrows = 10;
 var score = 0;
 
 function preload() {
-  backgroundImg = loadImage("./assets/background.png");
+  backgroundImg = loadImage("background.png");
 }
 
 function setup() {
@@ -22,7 +22,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  playerBase = new PlayerBase(300, 500, 180, 150);
+  playerBase = new playerBase(300, 500, 180, 150);
   player = new Player(285, playerBase.body.position.y - 153, 50, 180);
   playerArcher = new PlayerArcher(
     340,
